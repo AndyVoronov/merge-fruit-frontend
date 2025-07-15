@@ -30,7 +30,8 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'src/assets/*.svg', to: 'assets/[name][ext]' }
+        { from: 'src/assets/*.svg', to: 'assets/[name][ext]' },
+        { from: 'src/assets/backgrounds/*.svg', to: 'assets/backgrounds/[name][ext]' }
       ]
     }),
     ...(isProduction ? [
